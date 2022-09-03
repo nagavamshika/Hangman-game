@@ -1,0 +1,10 @@
+Challenges:
+
+
+1.in the single player version I didnt know how to make the computer give a random word to the user
+
+2.in two player version, when the first player enters the word in the console, its visible to the second player.
+  So I wanted to clear the console before the second player starts guessing the word.
+  I have searched a solution for this and asked my friends about it but i couldnt find a way to clear the console.
+  so I printed a huge number of new lines after the first player enters the word, so that the second player cant see
+  the word unless he scrolls to the very top of console.
