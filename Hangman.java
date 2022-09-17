@@ -16,13 +16,14 @@ public class Hangman {
     String word;
     
     if (players.equals("1")) {
-      Scanner scanner = new Scanner(new File("E:\java practice programs\english_words.txt"));
+      File f = new File("E:/java practice programs/english_words.txt");
+      Scanner scanner = new Scanner(f);
       List<String> words = new ArrayList<>();
       
       while (scanner.hasNext()) {
         words.add(scanner.nextLine());
       }
-      
+      scanner.close();
       Random rand = new Random();
       word = words.get(rand.nextInt(words.size()));
     }
